@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"final test\startup_stm32f103xb.o"
+"final test\rgb_library.o"
+"final test\main.o"
+"final test\stm32f1xx_it.o"
+"final test\stm32f1xx_hal_msp.o"
+"final test\stm32f1xx_hal_gpio_ex.o"
+"final test\stm32f1xx_hal_tim_1.o"
+"final test\stm32f1xx_hal_tim_ex_1.o"
+"final test\stm32f1xx_hal.o"
+"final test\stm32f1xx_hal_rcc.o"
+"final test\stm32f1xx_hal_rcc_ex.o"
+"final test\stm32f1xx_hal_gpio.o"
+"final test\stm32f1xx_hal_dma_1.o"
+"final test\stm32f1xx_hal_cortex.o"
+"final test\stm32f1xx_hal_pwr.o"
+"final test\stm32f1xx_hal_flash.o"
+"final test\stm32f1xx_hal_flash_ex.o"
+"final test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "final test\final test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "final test.map" -o "final test\final test.axf"
